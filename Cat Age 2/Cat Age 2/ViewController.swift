@@ -14,7 +14,8 @@ class ViewController: UIViewController {
     
     
     @IBAction func calculateButton(_ sender: Any) {
-        finalAge.text = catAgeLabel.text
+       var ageInCatYears = Int(catAgeLabel.text!)! * 7
+        finalAge.text = String(ageInCatYears)
     }
 
     override func viewDidLoad() {
